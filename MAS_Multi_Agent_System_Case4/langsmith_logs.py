@@ -1,7 +1,8 @@
+# langsmith_logs.py
+
 import json
 from pathlib import Path
 from langsmith import Client
-import time
 
 # Set up LangSmith client
 client = Client(
@@ -32,37 +33,6 @@ def get_recent_runs(project_name="pr-sandy-paperwork-72", limit=5):
 
     return formatted
 
-# Append only new logs to JSON file
-def save_logs_to_file(new_logs, filename="logs/langsmith_logs.json"):
-    Path("logs").mkdir(parents=True, exist_ok=True)
-
-    # Load existing logs if any
-    if Path(filename).exists():
-        with open(filename, "r", encoding="utf-8") as f:
-            existing_logs = json.load(f)
-    else:
-        existing_logs = []
-
-    # Create a set of unique IDs from existing logs to avoid duplicates
-    seen = {f"{log['name']}_{log['start_time']}" for log in existing_logs}
-
-    # Add only new logs
-    for log in new_logs:
-        log_id = f"{log['name']}_{log['start_time']}"
-        if log_id not in seen:
-            existing_logs.append(log)
-            seen.add(log_id)
-
-    # Save combined logs back to file
-    with open(filename, "w", encoding="utf-8") as f:
-        json.dump(existing_logs, f, indent=2, ensure_ascii=False)
-
-    print(f"✅ {len(new_logs)} logs fetched, {len(existing_logs)} total saved.")
-
-
-# Run as script with live polling
+# Optional: for quick testing
 if __name__ == "__main__":
-    while True:
-        logs = get_recent_runs()
-        save_logs_to_file(logs)
-        time.sleep(5)
+    logs = get_recent_runs(limit=10)
