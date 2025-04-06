@@ -2,84 +2,83 @@
   "recipes": [
     {
       "id": "1",
-      "title": "Simple Tomato and Egg Rice Bowl (serves 1)",
-      "summary": "A quick and easy rice bowl with tomatoes and egg.",
-      "image": "placeholder_image_url_1",
-      "readyInMinutes": 10,
+      "title": "Simple Rice Porridge",
+      "summary": "A basic and comforting rice porridge.",
+      "image": "PLACEHOLDER_IMAGE_URL_1",
+      "readyInMinutes": 25,
       "ingredients": [
-        "1 large egg",
-        "1/2 cup cooked rice",
-        "1/2 cup chopped tomatoes",
-        "1/4 teaspoon curry powder",
-        "Salt and pepper to taste",
-        "Optional: A small amount of oil or ghee"
+        "1 cup rice",
+        "4 cups water or broth (chicken or vegetable)",
+        "Salt to taste"
       ],
       "steps": [
-        "If using oil or ghee, heat a small pan over medium heat. Add the chopped tomatoes and cook for 2-3 minutes until slightly softened.",
-        "In the same pan, crack the egg and cook to your liking (scrambled, fried, or sunny-side up). Season with salt and pepper.",
-        "Stir in the curry powder to the tomatoes and cook for another minute to bloom the spices.",
-        "Serve the cooked egg and tomato mixture over the cooked rice."
+        "Rinse the rice under cold water.",
+        "Combine rice and water/broth in a pot.",
+        "Bring to a boil, then reduce heat and simmer for 20-25 minutes, or until rice is tender and creamy. Stir occasionally to prevent sticking.",
+        "Season with salt to taste."
       ],
       "nutrition": {
-        "calories": "250",
-        "protein": "10",
-        "carbs": "35",
-        "fat": "8"
+        "calories": "200-250",
+        "protein": "4-6g",
+        "carbs": "45-50g",
+        "fat": "1-2g"
       }
     },
     {
       "id": "2",
-      "title": "Tomato-Egg Fried Rice (serves 1)",
-      "summary": "Fried rice with tomatoes and egg.",
-      "image": "placeholder_image_url_2",
-      "readyInMinutes": 10,
+      "title": "Savory Rice Soup with Herbs",
+      "summary": "A flavorful rice soup with herbs.",
+      "image": "PLACEHOLDER_IMAGE_URL_2",
+      "readyInMinutes": 25,
       "ingredients": [
-        "1 large egg",
-        "1/2 cup cooked rice (day-old rice works best)",
-        "1/2 cup chopped tomatoes",
-        "1/4 teaspoon curry powder",
-        "1/4 teaspoon turmeric powder (for color)",
-        "Salt and pepper to taste",
-        "Optional: A small amount of oil or ghee"
+        "1 cup rice",
+        "4 cups water or broth (vegetable recommended)",
+        "1 tablespoon olive oil",
+        "1 small onion, chopped",
+        "2 cloves garlic, minced",
+        "1 teaspoon dried herbs (Italian mix, or thyme/oregano)",
+        "Salt and pepper to taste"
       ],
       "steps": [
-        "If using oil or ghee, heat a small pan or wok over medium-high heat.",
-        "Scramble the egg in the pan and remove from the pan.",
-        "Add the chopped tomatoes and cook for 1-2 minutes.",
-        "Add the cooked rice, curry powder, and turmeric powder to the pan. Stir-fry for 3-4 minutes until heated through.",
-        "Add the scrambled egg back to the pan and stir to combine. Season with salt and pepper."
+        "Rinse the rice.",
+        "Heat olive oil in a pot. Saute onion and garlic until softened.",
+        "Add rice and stir for 1 minute.",
+        "Pour in water/broth and add herbs.",
+        "Bring to a boil, then reduce heat and simmer for 20 minutes, or until rice is cooked through.",
+        "Season with salt and pepper to taste."
       ],
       "nutrition": {
-        "calories": "270",
-        "protein": "12",
-        "carbs": "37",
-        "fat": "10"
+        "calories": "250-300",
+        "protein": "5-7g",
+        "carbs": "50-55g",
+        "fat": "5-7g"
       }
     },
     {
       "id": "3",
-      "title": "Curried Egg and Tomato Rice (serves 1)",
-      "summary": "Simple curried rice with egg and tomatoes.",
-      "image": "placeholder_image_url_3",
-      "readyInMinutes": 8,
+      "title": "Sweet Rice Soup with Cinnamon",
+      "summary": "A sweet and comforting rice soup with cinnamon.",
+      "image": "PLACEHOLDER_IMAGE_URL_3",
+      "readyInMinutes": 25,
       "ingredients": [
-        "1 large egg, lightly beaten",
-        "1/2 cup cooked rice",
-        "1/2 cup chopped tomatoes",
-        "1/4 teaspoon curry powder",
-        "Pinch of salt",
-        "Pinch of black pepper"
+        "1 cup rice",
+        "4 cups water or milk (dairy or plant-based)",
+        "1 cinnamon stick",
+        "1/4 teaspoon ground cinnamon",
+        "2 tablespoons sugar or honey (optional)"
       ],
       "steps": [
-        "Combine the beaten egg, chopped tomatoes, curry powder, salt, and pepper in a bowl.",
-        "Add the cooked rice to the bowl and mix well to combine.",
-        "You can microwave for 1-2 minutes to heat through, or gently heat in a saucepan over low heat, stirring frequently."
+        "Rinse the rice.",
+        "Combine rice, water/milk, cinnamon stick, and ground cinnamon in a pot.",
+        "Bring to a boil, then reduce heat and simmer for 20-25 minutes, or until rice is cooked and creamy.",
+        "Remove cinnamon stick.",
+        "If desired, stir in sugar or honey to taste."
       ],
       "nutrition": {
-        "calories": "240",
-        "protein": "9",
-        "carbs": "35",
-        "fat": "8"
+        "calories": "250-350",
+        "protein": "6-10g",
+        "carbs": "50-60g",
+        "fat": "2-8g"
       }
     }
   ]

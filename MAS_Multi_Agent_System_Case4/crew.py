@@ -7,19 +7,17 @@ import json
 import os
 import re
 import crewai_tools
-from langchain.callbacks import StdOutCallbackHandler
-from langchain.callbacks.tracers.run_collector import RunCollectorCallbackHandler
 from urllib.parse import quote
-
-tracer = RunCollectorCallbackHandler()
-handler = StdOutCallbackHandler()
+from langchain.callbacks.tracers.langchain import LangChainTracer
 
 load_dotenv()
 
+tracer = LangChainTracer()
 
 import os
 os.environ['GOOGLE_API_KEY'] = os.getenv('GOOGLE_API_KEY')
 os.environ['SERPER_API_KEY'] = os.getenv('SERPER_API_KEY')    
+os.environ['LANGSMITH_API_KEY'] = os.getenv('LANGSMITH_API_KEY')    
     
 # Step 1: Get user input
 print("\n🍽 Welcome to the Smart Recipe Assistant! Please enter a few details.")
@@ -61,7 +59,8 @@ recipe_recommendation_crew = Crew(
     tasks=all_tasks,
     process=Process.sequential,
     verbose=True,
-    planning=True
+    planning=True,
+    callbacks=[tracer]
 )
 
 # === MAIN EXECUTION ===
