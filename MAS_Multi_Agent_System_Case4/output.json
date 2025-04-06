@@ -2,115 +2,84 @@
   "recipes": [
     {
       "id": "1",
-      "title": "Simple Indian Tofu Curry",
-      "summary": "A hearty and flavorful Indian tofu curry with potatoes, carrots, and peas in a creamy coconut milk sauce.",
-      "image": "placeholder_image_url_1.jpg",
-      "readyInMinutes": 45,
+      "title": "Simple Tomato and Egg Rice Bowl (serves 1)",
+      "summary": "A quick and easy rice bowl with tomatoes and egg.",
+      "image": "placeholder_image_url_1",
+      "readyInMinutes": 10,
       "ingredients": [
-        "1 block firm tofu, cubed",
-        "1 medium onion, chopped",
-        "2 cloves garlic, minced",
-        "1 inch ginger, grated",
-        "1 medium potato, cubed",
-        "1 medium carrot, cubed",
-        "1/2 cup peas",
-        "1 can (13.5 oz) full-fat coconut milk",
-        "1 cup vegetable broth",
-        "1 tbsp curry powder",
-        "1 tsp turmeric",
-        "1/2 tsp cumin",
-        "1/4 tsp chili powder (optional)",
+        "1 large egg",
+        "1/2 cup cooked rice",
+        "1/2 cup chopped tomatoes",
+        "1/4 teaspoon curry powder",
         "Salt and pepper to taste",
-        "Fresh cilantro, chopped (for garnish)"
+        "Optional: A small amount of oil or ghee"
       ],
       "steps": [
-        "Heat oil in a large pot or Dutch oven over medium heat. Add onion and cook until softened, about 5 minutes.",
-        "Add garlic and ginger and cook for 1 minute more.",
-        "Stir in curry powder, turmeric, cumin, and chili powder (if using). Cook for 1 minute, stirring constantly.",
-        "Add potatoes and carrots. Cook for 5 minutes, stirring occasionally.",
-        "Pour in coconut milk and vegetable broth. Bring to a simmer.",
-        "Add tofu and peas. Reduce heat to low, cover, and simmer for 20 minutes, or until vegetables are tender.",
-        "Season with salt and pepper to taste.",
-        "Garnish with fresh cilantro before serving."
+        "If using oil or ghee, heat a small pan over medium heat. Add the chopped tomatoes and cook for 2-3 minutes until slightly softened.",
+        "In the same pan, crack the egg and cook to your liking (scrambled, fried, or sunny-side up). Season with salt and pepper.",
+        "Stir in the curry powder to the tomatoes and cook for another minute to bloom the spices.",
+        "Serve the cooked egg and tomato mixture over the cooked rice."
       ],
       "nutrition": {
-        "calories": "400-500 kcal per serving",
-        "protein": "15-20g per serving",
-        "carbs": "40-50g per serving",
-        "fat": "20-30g per serving (largely from coconut milk)"
+        "calories": "250",
+        "protein": "10",
+        "carbs": "35",
+        "fat": "8"
       }
     },
     {
       "id": "2",
-      "title": "Thai Green Curry with Tofu and Vegetables",
-      "summary": "A vibrant and aromatic Thai green curry featuring tofu, cauliflower, and spinach in a light coconut milk broth.",
-      "image": "placeholder_image_url_2.jpg",
-      "readyInMinutes": 40,
+      "title": "Tomato-Egg Fried Rice (serves 1)",
+      "summary": "Fried rice with tomatoes and egg.",
+      "image": "placeholder_image_url_2",
+      "readyInMinutes": 10,
       "ingredients": [
-        "1 block firm tofu, cubed",
-        "1 medium onion, chopped",
-        "2 cloves garlic, minced",
-        "1 inch ginger, grated",
-        "1 cup cauliflower florets",
-        "1 cup spinach",
-        "1 can (13.5 oz) light coconut milk",
-        "1/2 cup vegetable broth",
-        "2 tbsp green curry paste",
-        "1/4 cup lime juice",
-        "Salt and pepper to taste"
+        "1 large egg",
+        "1/2 cup cooked rice (day-old rice works best)",
+        "1/2 cup chopped tomatoes",
+        "1/4 teaspoon curry powder",
+        "1/4 teaspoon turmeric powder (for color)",
+        "Salt and pepper to taste",
+        "Optional: A small amount of oil or ghee"
       ],
       "steps": [
-        "Heat oil in a wok or large skillet over medium heat. Add onion and cook until softened, about 5 minutes.",
-        "Add garlic and ginger and cook for 1 minute more.",
-        "Stir in green curry paste and cook for 1 minute, stirring constantly.",
-        "Add cauliflower and cook for 5 minutes, stirring occasionally.",
-        "Pour in coconut milk and vegetable broth. Bring to a simmer.",
-        "Add tofu and spinach. Reduce heat to low, cover, and simmer for 10 minutes, or until vegetables are tender and spinach is wilted.",
-        "Stir in lime juice. Season with salt and pepper to taste.",
-        "Serve hot with rice (rice not included in ingredients)."
+        "If using oil or ghee, heat a small pan or wok over medium-high heat.",
+        "Scramble the egg in the pan and remove from the pan.",
+        "Add the chopped tomatoes and cook for 1-2 minutes.",
+        "Add the cooked rice, curry powder, and turmeric powder to the pan. Stir-fry for 3-4 minutes until heated through.",
+        "Add the scrambled egg back to the pan and stir to combine. Season with salt and pepper."
       ],
       "nutrition": {
-        "calories": "300-400 kcal per serving",
-        "protein": "12-18g per serving",
-        "carbs": "30-40g per serving",
-        "fat": "15-20g per serving (lower than Recipe 1 due to light coconut milk)"
+        "calories": "270",
+        "protein": "12",
+        "carbs": "37",
+        "fat": "10"
       }
     },
     {
       "id": "3",
-      "title": "Japanese-Inspired Tofu and Vegetable Curry",
-      "summary": "A delicate Japanese-style tofu and vegetable curry with carrots, potatoes, and peas in a light coconut milk base.",
-      "image": "placeholder_image_url_3.jpg",
-      "readyInMinutes": 30,
+      "title": "Curried Egg and Tomato Rice (serves 1)",
+      "summary": "Simple curried rice with egg and tomatoes.",
+      "image": "placeholder_image_url_3",
+      "readyInMinutes": 8,
       "ingredients": [
-        "1/2 block firm tofu, cubed",
-        "1/2 medium onion, chopped",
-        "1 clove garlic, minced",
-        "1/2 inch ginger, grated",
-        "1/2 cup carrots, thinly sliced",
-        "1/2 cup potatoes, cubed",
-        "1/4 cup peas",
-        "1/2 can (13.5 oz) light coconut milk",
-        "1/4 cup vegetable broth",
-        "1 tbsp curry powder",
-        "1/2 tsp coriander",
-        "Salt and pepper to taste"
+        "1 large egg, lightly beaten",
+        "1/2 cup cooked rice",
+        "1/2 cup chopped tomatoes",
+        "1/4 teaspoon curry powder",
+        "Pinch of salt",
+        "Pinch of black pepper"
       ],
       "steps": [
-        "Heat oil in a small saucepan over medium heat. Add onion and cook until softened, about 3 minutes.",
-        "Add garlic and ginger and cook for 30 seconds more.",
-        "Stir in curry powder and coriander. Cook for 30 seconds, stirring constantly.",
-        "Add carrots and potatoes. Cook for 3 minutes, stirring occasionally.",
-        "Pour in coconut milk and vegetable broth. Bring to a simmer.",
-        "Add tofu and peas. Reduce heat to low, cover, and simmer for 10 minutes, or until vegetables are tender.",
-        "Season with salt and pepper to taste.",
-        "Serve hot with rice (rice not included in ingredients)."
+        "Combine the beaten egg, chopped tomatoes, curry powder, salt, and pepper in a bowl.",
+        "Add the cooked rice to the bowl and mix well to combine.",
+        "You can microwave for 1-2 minutes to heat through, or gently heat in a saucepan over low heat, stirring frequently."
       ],
       "nutrition": {
-        "calories": "200-250 kcal per serving",
-        "protein": "8-12g per serving",
-        "carbs": "20-30g per serving",
-        "fat": "10-15g per serving (lowest among the three recipes)"
+        "calories": "240",
+        "protein": "9",
+        "carbs": "35",
+        "fat": "8"
       }
     }
   ]

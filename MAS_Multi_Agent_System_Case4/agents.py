@@ -12,7 +12,7 @@ os.environ['SERPER_API_KEY'] = os.getenv('SERPER_API_KEY')
 llm = ChatGoogleGenerativeAI(
     model="gemini-1.5-flash",
     verbose=True,
-    temperature=0.5,
+    temperature=0.7,
     google_api_key=os.getenv("GOOGLE_API_KEY")
 )
 
@@ -30,7 +30,9 @@ web_analyzer_agent = Agent(
     tools=[search_tool,web_scraper_tool],
     llm=llm,
     verbose=True,
-    async_execution=False
+    async_execution=False,
+    allow_delegation=True,
+    memory=True
 )
 
 # 🥗 Nutritionist Agent
@@ -47,7 +49,9 @@ nutritionist_agent = Agent(
     tools=[nutrition_filter_tool, search_tool, web_scraper_tool],
     llm=llm,
     verbose=True,
-    async_execution=False
+    async_execution=False,
+    allow_delegation=True,
+    memory=True
 )
 
 # 👨‍🍳 Chef Agent
@@ -64,7 +68,9 @@ chef_agent = Agent(
     tools=[recipe_tool, search_tool,web_scraper_tool],
     llm=llm,
     verbose=True,
-    async_execution=False
+    async_execution=False,
+    allow_delegation=True,
+    memory=True
 )
 
 # 🎁 Presenter Agent
@@ -82,7 +88,9 @@ presenter_agent = Agent(
     tools=[presentation_tool, search_tool,web_scraper_tool],
     llm=llm,
     verbose=True,
-    async_execution=False
+    async_execution=False,
+    allow_delegation=True,
+    memory=True
 )
 
 all_agents = [web_analyzer_agent, nutritionist_agent, chef_agent, presenter_agent]
