@@ -1,0 +1,117 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Simple Indian Tofu Curry",
+      "summary": "A hearty and flavorful Indian tofu curry with potatoes, carrots, and peas in a creamy coconut milk sauce.",
+      "image": "placeholder_image_url_1.jpg",
+      "readyInMinutes": 45,
+      "ingredients": [
+        "1 block firm tofu, cubed",
+        "1 medium onion, chopped",
+        "2 cloves garlic, minced",
+        "1 inch ginger, grated",
+        "1 medium potato, cubed",
+        "1 medium carrot, cubed",
+        "1/2 cup peas",
+        "1 can (13.5 oz) full-fat coconut milk",
+        "1 cup vegetable broth",
+        "1 tbsp curry powder",
+        "1 tsp turmeric",
+        "1/2 tsp cumin",
+        "1/4 tsp chili powder (optional)",
+        "Salt and pepper to taste",
+        "Fresh cilantro, chopped (for garnish)"
+      ],
+      "steps": [
+        "Heat oil in a large pot or Dutch oven over medium heat. Add onion and cook until softened, about 5 minutes.",
+        "Add garlic and ginger and cook for 1 minute more.",
+        "Stir in curry powder, turmeric, cumin, and chili powder (if using). Cook for 1 minute, stirring constantly.",
+        "Add potatoes and carrots. Cook for 5 minutes, stirring occasionally.",
+        "Pour in coconut milk and vegetable broth. Bring to a simmer.",
+        "Add tofu and peas. Reduce heat to low, cover, and simmer for 20 minutes, or until vegetables are tender.",
+        "Season with salt and pepper to taste.",
+        "Garnish with fresh cilantro before serving."
+      ],
+      "nutrition": {
+        "calories": "400-500 kcal per serving",
+        "protein": "15-20g per serving",
+        "carbs": "40-50g per serving",
+        "fat": "20-30g per serving (largely from coconut milk)"
+      }
+    },
+    {
+      "id": "2",
+      "title": "Thai Green Curry with Tofu and Vegetables",
+      "summary": "A vibrant and aromatic Thai green curry featuring tofu, cauliflower, and spinach in a light coconut milk broth.",
+      "image": "placeholder_image_url_2.jpg",
+      "readyInMinutes": 40,
+      "ingredients": [
+        "1 block firm tofu, cubed",
+        "1 medium onion, chopped",
+        "2 cloves garlic, minced",
+        "1 inch ginger, grated",
+        "1 cup cauliflower florets",
+        "1 cup spinach",
+        "1 can (13.5 oz) light coconut milk",
+        "1/2 cup vegetable broth",
+        "2 tbsp green curry paste",
+        "1/4 cup lime juice",
+        "Salt and pepper to taste"
+      ],
+      "steps": [
+        "Heat oil in a wok or large skillet over medium heat. Add onion and cook until softened, about 5 minutes.",
+        "Add garlic and ginger and cook for 1 minute more.",
+        "Stir in green curry paste and cook for 1 minute, stirring constantly.",
+        "Add cauliflower and cook for 5 minutes, stirring occasionally.",
+        "Pour in coconut milk and vegetable broth. Bring to a simmer.",
+        "Add tofu and spinach. Reduce heat to low, cover, and simmer for 10 minutes, or until vegetables are tender and spinach is wilted.",
+        "Stir in lime juice. Season with salt and pepper to taste.",
+        "Serve hot with rice (rice not included in ingredients)."
+      ],
+      "nutrition": {
+        "calories": "300-400 kcal per serving",
+        "protein": "12-18g per serving",
+        "carbs": "30-40g per serving",
+        "fat": "15-20g per serving (lower than Recipe 1 due to light coconut milk)"
+      }
+    },
+    {
+      "id": "3",
+      "title": "Japanese-Inspired Tofu and Vegetable Curry",
+      "summary": "A delicate Japanese-style tofu and vegetable curry with carrots, potatoes, and peas in a light coconut milk base.",
+      "image": "placeholder_image_url_3.jpg",
+      "readyInMinutes": 30,
+      "ingredients": [
+        "1/2 block firm tofu, cubed",
+        "1/2 medium onion, chopped",
+        "1 clove garlic, minced",
+        "1/2 inch ginger, grated",
+        "1/2 cup carrots, thinly sliced",
+        "1/2 cup potatoes, cubed",
+        "1/4 cup peas",
+        "1/2 can (13.5 oz) light coconut milk",
+        "1/4 cup vegetable broth",
+        "1 tbsp curry powder",
+        "1/2 tsp coriander",
+        "Salt and pepper to taste"
+      ],
+      "steps": [
+        "Heat oil in a small saucepan over medium heat. Add onion and cook until softened, about 3 minutes.",
+        "Add garlic and ginger and cook for 30 seconds more.",
+        "Stir in curry powder and coriander. Cook for 30 seconds, stirring constantly.",
+        "Add carrots and potatoes. Cook for 3 minutes, stirring occasionally.",
+        "Pour in coconut milk and vegetable broth. Bring to a simmer.",
+        "Add tofu and peas. Reduce heat to low, cover, and simmer for 10 minutes, or until vegetables are tender.",
+        "Season with salt and pepper to taste.",
+        "Serve hot with rice (rice not included in ingredients)."
+      ],
+      "nutrition": {
+        "calories": "200-250 kcal per serving",
+        "protein": "8-12g per serving",
+        "carbs": "20-30g per serving",
+        "fat": "10-15g per serving (lowest among the three recipes)"
+      }
+    }
+  ]
+}

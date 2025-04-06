@@ -1,62 +1,88 @@
 from crewai import Agent
-from tools import google_search_tool, nutrition_filter_tool, recipe_tool, presentation_tool, duckduckgo_search_tool
+from tools import search_tool, web_scraper_tool, nutrition_filter_tool, recipe_tool, presentation_tool
 from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 import os
 
 load_dotenv()
-os.environ['API_KEY'] = os.getenv('API_KEY')
-print("Loaded Google API Key:", os.getenv("API_KEY"))
+os.environ['GOOGLE_API_KEY'] = os.getenv('GOOGLE_API_KEY')
+os.environ['SERPER_API_KEY'] = os.getenv('SERPER_API_KEY')
+
 
 llm = ChatGoogleGenerativeAI(
     model="gemini-1.5-flash",
     verbose=True,
     temperature=0.5,
-    google_api_key=os.getenv("API_KEY")
+    google_api_key=os.getenv("GOOGLE_API_KEY")
 )
 
 # 🧠 Web Analyzer Agent
 web_analyzer_agent = Agent(
     role="Web Analyzer",
-    goal="Analyze user preferences and enrich with relevant food and ingredient info from trusted sources.",
-    backstory="Expert in understanding user context like meal type, dish preferences, and ingredient usage.",
-    tools=[google_search_tool,duckduckgo_search_tool],
+    goal=( 
+          "Analyze user preferences such as dietary restrictions, allergies, cuisine style, and available ingredients. "
+          "Use web sources to enrich context with nutritional, cultural, or preparation-related insights." 
+          ),
+    backstory=(
+            "An AI culinary researcher trained to understand user cooking needs and context. Skilled at exploring food data "
+            "based on dietary needs (e.g. vegan, keto), allergy concerns, cooking time constraints, and regional cuisines." 
+               ),
+    tools=[search_tool,web_scraper_tool],
     llm=llm,
-    verbose=True,    
-    allow_delegation=True
+    verbose=True,
+    async_execution=False
 )
 
 # 🥗 Nutritionist Agent
 nutritionist_agent = Agent(
     role="Nutritionist",
-    goal="Filter ingredients based on user input and suggest safe options. Must strictly follow user constraints.",
-    backstory="Certified AI dietitian that always prioritizes user input (e.g., allergies, dislikes) when giving advice.",
-    tools=[nutrition_filter_tool,google_search_tool, duckduckgo_search_tool],
+    goal=(
+        "Evaluate all ingredients provided and eliminate any that conflict with the user's allergies or dietary restrictions. "
+        "Return only safe and compliant ingredients for recipe creation."
+    ),
+    backstory=(
+        "Certified AI nutritionist trained in medical diet safety and lifestyle-based restrictions. Always ensures user "
+        "wellbeing by strictly filtering unsafe or non-compliant ingredients before recipe generation."
+    ),  
+    tools=[nutrition_filter_tool, search_tool, web_scraper_tool],
     llm=llm,
     verbose=True,
-    allow_delegation=True
+    async_execution=False
 )
 
 # 👨‍🍳 Chef Agent
 chef_agent = Agent(
     role="Chef",
-    goal="Generate 3 creative, healthy recipes based strictly on safe ingredients provided by the nutritionist.",
-    backstory="AI-based culinary expert. Never adds or changes ingredients beyond what the user approved.",
-    tools=[recipe_tool,google_search_tool, duckduckgo_search_tool],
+    goal=(
+        "Create 3 easy-to-follow, culturally appropriate recipes using only the filtered ingredients. "
+        "Each recipe must match the selected meal type, dietary restriction, cuisine style, and cooking time limit."
+    ),
+    backstory=(
+        "An expert recipe-generation AI with a deep understanding of global cuisines and diet-conscious cooking. "
+        "Always follows the user's approved ingredient list and restrictions. Never improvises with unapproved ingredients."
+    ),
+    tools=[recipe_tool, search_tool,web_scraper_tool],
     llm=llm,
     verbose=True,
-    allow_delegation=True
+    async_execution=False
 )
 
 # 🎁 Presenter Agent
 presenter_agent = Agent(
     role="Presenter",
-    goal="Format recipes into a beautiful, easy-to-follow output with related tutorial links.",
-    backstory="A formatting specialist AI who makes content look great without changing the recipe logic.",
-    tools=[presentation_tool, google_search_tool , duckduckgo_search_tool],
+    goal=(
+        "Take the final recipes and present them in a clean, visually appealing, and user-friendly format. "
+        "Include a high-quality image of the dish and a relevant YouTube link for a cooking tutorial. "
+        "Strictly format only — do not alter the recipe steps or ingredients in any way."
+    ),
+    backstory=(
+        "An expert in content presentation, layout, and food visuals. Known for delivering beautiful, ready-to-share recipe cards "
+        "with helpful links and attractive dish photos. Follows strict formatting rules and never modifies recipe content."
+    ),
+    tools=[presentation_tool, search_tool,web_scraper_tool],
     llm=llm,
     verbose=True,
-    allow_delegation=True
+    async_execution=False
 )
 
 all_agents = [web_analyzer_agent, nutritionist_agent, chef_agent, presenter_agent]
